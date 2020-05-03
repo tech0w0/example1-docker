@@ -1,7 +1,7 @@
-FROM golang:alpine
+FROM scratch
+
+COPY . example1/
 
 WORKDIR /example1
-
-COPY . /example1
 
 CMD ["./example1"] 
