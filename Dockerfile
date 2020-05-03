@@ -1,7 +1,9 @@
-FROM scratch
+FROM centos:latest
 
-COPY . example1/
+COPY . /example1
 
 WORKDIR /example1
 
-CMD ["./example1"] 
+RUN chmod 777 example1
+
+CMD ["./example1"]
