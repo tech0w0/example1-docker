@@ -1,5 +1,5 @@
 pipeline {
-    agent {dockerfile: true}
+    agent any
 
     tools {
      go { 'go-1.14' }
